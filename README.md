@@ -1,6 +1,5 @@
 # bash-settings
-
-## notes about preferred bash settings in case my laptop is stolen, again :broken_heart:
+*notes about preferred bash settings in case my laptop is stolen, again* :broken_heart:
 _____
 
 ## [oh my zsh](https://github.com/robbyrussell/oh-my-zsh)
