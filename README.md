@@ -12,22 +12,22 @@ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/loca
 ```
 
 ## custom terminal commands
-1. create file constaining desired bash script `open-db-schema`
+1. create file containing desired bash script `open-db-schema`.  Example script:
 ```
 #!/bin/bash
 open -a Preview ~/shortcut/db-schema
 ```
-2. mark file as executable
+2. mark bash script file as executable
 ```
 $ chmod +x open-db-schema
 ```
-3. create a symbolic link
+3. create a symbolic link between your script and a keyword of your choosing
 ```
 ┌── ln(1) link, ln -- make links
 │   ┌── Create a symbolic link.
 │   │                         ┌── the path to the intended symlink
 │   │                         │   can use . or ~ or other relative paths
-│   │                   ┌─────┴────────┐
+│   │                  ┌──────┴──────────┐
 ln -s ~/open-db-schema /usr/local/bin/sch
       └───────┬───────┘
               └── the path to the original file/folder
