@@ -40,6 +40,7 @@ ln -s ~/open-db-schema /usr/local/bin/sch
 ## Commands
 
 `ln -s /usr/local/bin/terraform /usr/local/bin/tf`
+
 `ln -s ~/shortcut/write-running-notes /usr/local/bin/write-note`
 
 ```
@@ -47,4 +48,20 @@ ln -s ~/open-db-schema /usr/local/bin/sch
 today=`date +%m/%d/%Y`
 printf "##########\n$today\n##########\n\n" | cat - ~/_notes/running_notes.txt > ~/temp_notes.txt && mv ~/temp_notes.txt ~/_notes/running_notes.txt
 open -a Sublime\ Text ~/_notes/running_notes.txt
+```
+
+`ln -s ~/shortcut/start-standup /usr/local/bin/standup`
+
+```
+#!/bin/bash
+
+open -a zoom.us https://loc.zoomgov.com/j/something`
+```
+
+`ln -s ~/shortcut/start-meet /usr/local/bin/meet`
+
+```
+#!/bin/bash
+
+open -a "Google Chrome.app" https://meet.google.com/something
 ```
